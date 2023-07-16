@@ -36,6 +36,16 @@ gem "redis", "~> 4.0"
 #make better errors better looking
 gem 'better_errors', '~> 2.10'
 
+#jquery
+gem 'jquery-rails', '~> 4.4'
+
+#propper
+gem 'popper_js', '~> 2.11.7'
+
+# #bootstrap
+# gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
