@@ -22,8 +22,8 @@
   </head>
   <body>
     <%= render 'layouts/navbar' %>
-
     <%= yield %>
+    <%= render 'layouts/footer' %>
 
     <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
   </body>
