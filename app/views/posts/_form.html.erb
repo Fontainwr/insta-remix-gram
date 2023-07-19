@@ -1,4 +1,7 @@
+<div class="col-xl-4 col-6 col-sm-8 col-10" style="margin: auto;">
 <%= form_with(model: post) do |form| %>
+<h1>New post</h1>
+
   <% if post.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -13,20 +16,21 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
   <div>
     <%= form.label :keywords, style: "display: block" %>
-    <%= form.text_field :keywords %>
+    <%= form.text_field :keywords, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary col-12" %>
   </div>
 <% end %>
+</div>
