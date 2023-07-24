@@ -10,15 +10,21 @@
         <%= link_to "Upload Post", new_post_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-          <li class="nav-item">
-    <%= link_to "About Page", home_about_path, class: "nav-link"%>
-  </li>
+        <%= link_to "About Page", home_about_path, class: "nav-link" %>
       </li>
-      <li class="nav-item dropdown">
 
-      </li>
-      <li class="nav-item">
-      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        </li>
+      <% end %>
+
+      <!-- Add any additional nav items or dropdowns here -->
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
