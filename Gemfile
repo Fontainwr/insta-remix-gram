@@ -45,7 +45,8 @@ gem 'popper_js', '~> 2.11.7'
 # #bootstrap
 # gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 
-
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.9', '>= 4.9.2'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
