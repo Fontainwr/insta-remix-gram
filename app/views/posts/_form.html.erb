@@ -13,6 +13,10 @@
     <% end %>
   </div>
 
+  <div>
+    <%= form.text_field :user_id, type: "hidden", value: current_user.id %>
+  </div>
+
 
   <div>
     <% invalid = post.errors.include?(:description)%>
